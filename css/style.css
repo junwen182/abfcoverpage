@@ -1,0 +1,165 @@
+
+@font-face {
+  font-family: "gotham-med";
+  src: url('../fonts/gotham-med.ttf');
+}
+
+@font-face {
+  font-family: "gotham-reg";
+  src: url('../fonts/gotham-reg.ttf');
+}
+
+html { 
+  height:100%; 
+}
+
+html, html a {
+  -webkit-font-smoothing: antialiased !important;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+body { 
+  min-height: 100%;
+  background: url("../img/background-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.overlay {
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.5);
+  /* background: url("../img/overlay-vignette.png"); */
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  z-index: 2;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.logo img {
+  width: 300px;
+}
+
+.headline {
+  text-align: center;
+  color: white;
+  margin-top: 210px;
+}
+
+.headline h1 {
+  font-family: "gotham-med";
+  font-size: 70px;
+}
+
+.headline p {
+  font-family: "gotham-reg";
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.launching {
+  text-align: center;
+  margin-top: 80px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.launching p {
+  font-family: "gotham-reg";
+  font-size: 18px;
+  color: white;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+.contactButtons {
+  text-align: center;
+  margin-top: 25px
+}
+
+.contactButton {
+  color: #4F4F4F;
+  width: 250px;
+  padding-top: 15px;
+  text-align: center;
+  padding-bottom: 15px;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 100px;
+  font-size: 1em;
+  display: inline-block;
+  font-family: "gotham-reg";
+  -webkit-transition: All 0.2s ease;
+  -moz-transition: All 0.2s ease;
+  -o-transition: All 0.2s ease;
+  -ms-transition: All 0.2s ease;
+  transition: All 0.2s ease;
+}
+
+.contactButton:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #D70060;
+}
+
+.leftButton {
+  margin-right: 10px;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+  .logo img {
+    width: 250px;
+  }
+
+  .headline {
+    margin-top: 120px;
+  }
+
+  .headline h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .headline p {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .launching {
+    width: 80%;
+    margin-top: 50px;
+  }
+
+  .leftButton {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}
