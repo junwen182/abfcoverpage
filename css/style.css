@@ -19,17 +19,17 @@ html, html a {
 }
 
 body { 
-  min-height: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.coverpage {
+  height: 100%;
   background: url("../img/background-img.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
 }
 
 .overlay {
@@ -140,22 +140,30 @@ body {
   }
 
   .headline {
-    margin-top: 120px;
+    margin-top: 25%;
   }
 
   .headline h1 {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 43px;
+    line-height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .headline p {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px
   }
 
   .launching {
     width: 80%;
     margin-top: 50px;
+  }
+
+  .launching p {
+    font-size: 16px;
+    line-height: 23px;
   }
 
   .leftButton {
