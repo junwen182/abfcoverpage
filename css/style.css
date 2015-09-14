@@ -134,26 +134,28 @@ body {
 
 /* Media Queries */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .logo img {
     width: 250px;
   }
 
   .headline {
-    margin-top: 25%;
+    margin-top: 17%;
   }
 
   .headline h1 {
-    font-size: 43px;
+    font-size: 32px;
     line-height: 50px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 0;
   }
 
   .headline p {
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 16px
+    font-size: 16px;
+    margin-top: 0;
   }
 
   .launching {
@@ -167,7 +169,11 @@ body {
   }
 
   .leftButton {
-    margin-right: 0px;
+    margin-right: 0;
     margin-bottom: 10px;
   }
+}
+
+@media (max-height: 500px) {
+
 }
